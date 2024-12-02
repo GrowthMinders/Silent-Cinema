@@ -13,7 +13,7 @@ function validate(){
     
     
    //Regex for first and last name validations
-    const regexname = /^([a-zA-Z ]+){2,50}$/;
+    const regexname = /^([a-zA-Z ]+){3,50}$/;
    //Regex for password validations
     const regexpass1 = /[a-z]+/;
     const regexpass2 = /[A-Z]+/;
