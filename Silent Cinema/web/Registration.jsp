@@ -1,6 +1,6 @@
 <%-- 
-    Document   : registration
-    Created on : Nov 22, 2024, 4:21:35 PM
+    Document   : Registration
+    Created on : Dec 2, 2024, 3:58:55 PM
     Author     : Dhanuja
 --%>
 
@@ -38,7 +38,7 @@
         <div>
             <span id="errors" style="display: none;">
             </span>
-       </div>
+        </div>
     <div class="container">
         <div class="logo">
             <a href="./index.html"><img src="./Images/Logo.png" alt="Logo"></a>
@@ -72,4 +72,3 @@
     </div>
 </body>
 </html>
-
