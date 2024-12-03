@@ -26,6 +26,7 @@
     }
     
      errordisplay.innerHTML ="";
+     errordisplay.style.display="none";
      return true;
     
 }

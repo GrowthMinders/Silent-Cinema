@@ -102,9 +102,29 @@ select option{
     gap: 15px;
     width:fit-content;
 }
-dl{
+
+#up,
+#lo,
+#di,
+#spc,
+#len{
+    display: flex;
+    flex-direction: column;
     text-align: left;
     margin-left: 30px;
     color:red;
 }
 
+#ico{
+    display: flex;
+}
+
+#icon1,
+#icon2,
+#icon3,
+#icon4,
+#icon5{
+    margin-right: -20px;
+    margin-left: 23px;
+    color: red;
+}
