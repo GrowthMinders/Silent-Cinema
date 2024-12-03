@@ -24,7 +24,7 @@ public class RegisterServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
      
-        String url = "jdbc:sqlserver://192.168.130.250\\DATABASESERVER:1433;databaseName=Silent;encrypt=true;trustServerCertificate=true";
+        String url = "jdbc:sqlserver://192.168.57.250\\DATABASESERVER:1433;databaseName=Silent;encrypt=true;trustServerCertificate=true";
         String username = "Supun";
         String password = "Rulz@2002"; 
         
@@ -76,7 +76,7 @@ public class RegisterServlet extends HttpServlet {
                 }
 
                 if (takenmail || takentel || takennic) {
-                       res.sendRedirect("./registration.jsp");
+                       res.sendRedirect("./Registration.jsp");
 
                 }else{
                    for (int i = 0; i < 8; i++) {
