@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="Functionality.RegisterServlet.GlobalVariables"%>
+<%@ page import="Functionality.RegisterServlet.GlobalVariables"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
