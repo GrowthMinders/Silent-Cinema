@@ -1,0 +1,45 @@
+body {
+    background-color: #154e66;
+    color: rgb(198, 88, 88);
+    background-image: url('./Images/Login/background img.png');  
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.card {
+    width: 950px;  
+    height: 600px;
+    background-color: #004080;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: white;
+    border: none;
+}
+
+.card h1 {
+    color: #00CCFF;
+}
+
+.card .form-control {
+    border: 10px solid #ccc;
+    border-radius: 10px;
+}
+
+.card .btn-primary {
+    background-color: #0099FF;
+    border: none;
+}
+
+.card .btn-primary:hover {
+    background-color: #007ACC;
+}
+
+.card a {
+    color: #00CCFF;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}

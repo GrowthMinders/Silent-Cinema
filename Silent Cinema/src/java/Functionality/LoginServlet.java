@@ -38,7 +38,7 @@ public class LoginServlet extends HttpServlet{
                 if(result.next()){
                    String dbpass = result.getString("pass");
                    if (BCrypt.checkpw(pass, dbpass)){
-                     res.sendRedirect("./index.html");
+                     res.sendRedirect("./index.jsp");
                    }else{
                      res.getWriter().println("Invalid Credentials");
                    }
