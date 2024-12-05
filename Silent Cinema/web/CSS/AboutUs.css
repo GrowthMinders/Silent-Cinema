@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(135deg, #002942, #336a81);
+    font-family: Arial, sans-serif;
+}
+
+.navbar{
+    background:darkblue;
+}
+.vr{
+    color: whitesmoke;
+    width:1px;
+}
+
+.navbar a:hover {
+    background-color: #00aaff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #fff;
+} 
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-right:100px;
+    padding-left: 100px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
