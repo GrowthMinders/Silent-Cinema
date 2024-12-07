@@ -53,10 +53,10 @@
         </div>
     <div class="container">
         <div class="logo">
-            <a href="./index.html"><img src="./Images/Logo.png" alt="Logo"></a>
+            <a href="./index.jsp"><img src="./Images/Logo.png" alt="Logo"></a>
         </div>
         <h1>CREATE ACCOUNT</h1>
-             <form action = "RegisterServlet" method="post" name="reg" onsubmit="return validate()">
+             <form action = "./RegisterServlet" method="post" name="reg" onsubmit="return validate()">
             <input type="text" name = "fname" id = "fname" placeholder="FIRST NAME" <% if (GlobalVariables.data[0] != null) { %> value="<%= GlobalVariables.data[0] %>" <% } %>>
             <input type="text" name = "lname" id = "lname" placeholder="LAST NAME" <% if (GlobalVariables.data[1] != null) { %> value="<%= GlobalVariables.data[1] %>" <% } %>>
             <input type="email" name = "email" id = "email" placeholder="EMAIL" <% if (GlobalVariables.data[2] != null) { %> value="<%= GlobalVariables.data[2] %>" <% } %>>

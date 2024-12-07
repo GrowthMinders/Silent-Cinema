@@ -34,6 +34,7 @@
                     <li class="nav-item"><a class="nav-link" href="deals.jsp">DEALS AND EXCLUSIVES</a></li>
                     <li class="nav-item"><a class="btn btn-primary" href="tickets.jsp">BUY TICKETS</a></li>
                     <li class="nav-item"><a class="nav-link" href="./Logemail.jsp">LOGIN</a></li>
+
                 </ul>
             </div>
         </div>

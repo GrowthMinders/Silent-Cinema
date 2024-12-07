@@ -1,0 +1,45 @@
+/* Hero Section */
+.hero {
+    background-color: #174a84;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    color: #feffff;
+}
+.hero p {
+    color: #05000075;
+}
+
+.hero .input-group {
+    margin-top: 20px;
+}
+
+/* Navbar Brand Logo */
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+/* Movie Cards */
+.latest-movies .card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.latest-movies .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(116, 9, 9, 0.67);
+}
+
+.latest-movies .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.latest-movies .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.latest-movies .btn {
+    margin-top: 10px;
+}

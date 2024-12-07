@@ -11,8 +11,7 @@
         <title>Buy Tickets</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./CSS/Buytickets.css">
-        
+        <link rel="stylesheet" href="./CSS/Buytickets.css">        
     </head>
     <body>
         <div id="carouselExample" class="carousel slide">

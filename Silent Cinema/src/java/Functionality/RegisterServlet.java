@@ -100,7 +100,9 @@ public class RegisterServlet extends HttpServlet {
                         in.setString(7, nic);
                         in.executeUpdate();
 
-                        res.sendRedirect("./login.html");
+
+                        res.sendRedirect("./Login.jsp");
+
                     }
                 }
             }
