@@ -1,0 +1,87 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background:rgb(29, 77, 101);
+}
+
+  /* navbar */
+.navbar{
+  background:darkblue;
+}
+.vr{
+  color: whitesmoke;
+  width:1px;
+}
+
+.navbar a:hover {
+  background-color: #00aaff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #fff;
+} 
+  
+  /* Offers Container */
+  .offers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding-top: 100px;
+  }
+  
+  /* Hover Effect */
+  .offer-card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Offer Card Image */
+  .offer-image {
+    width: 40%;
+  }
+
+  .offer-sticker1 {
+    width: 100px;
+    height:80px;
+    border-radius: 5px;
+    margin:10px;
+    
+  }
+
+  .offer-sticker2 {
+    width: 130px;
+    height:80px;
+    border-radius: 5px;
+    margin-right:150px;
+    
+  }
+  
+  /* card-body */
+  .card-body {
+    padding: 60px;
+    text-align: justify;
+  }
+  
+  .card-body h3 {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .card-body p {
+    font-size: 1.0rem;
+    color:white;
+  }
+
+
+/* Offer Card */
+.offer-card {
+  display: flex;
+  align-items: center;
+  background-color:rgb(47, 62, 92);
+  width: 100%;
+  height:200px;
+  max-width: 900px;
+  overflow: hidden;
+  
+}
+
+
