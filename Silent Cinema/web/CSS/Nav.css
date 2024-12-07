@@ -1,0 +1,36 @@
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 30px; 
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar-nav .nav-item {
+  padding: 0 5px; 
+}
+
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+
+.navbar-nav .nav-link:hover {
+  background-color: #ffcc00;
+  color: #1b5a99 !important;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+
+.navbar-nav .highlight a {
+  background-color: #00bfff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #ffffff !important;
+}
