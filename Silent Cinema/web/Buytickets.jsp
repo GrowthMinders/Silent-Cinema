@@ -11,8 +11,7 @@
         <title>Buy Tickets</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="buytickets.css">
-        
+        <link rel="stylesheet" href="./CSS/Buytickets.css">        
     </head>
     <body>
         <div id="carouselExample" class="carousel slide">
@@ -24,11 +23,11 @@
                         <h1 id="movie-name" class="mb-2">SINGHAM AGAIN</h1>
                         <div id="movie-lang" class="mb-2">
                             <a href="https://example.com/left-icon" target="_blank">
-                                <img src="./images/ticket icon.png" alt="Left Icon" width="70px" height="70px">
+                                <img src="./images/Buytickets/ticket.png" alt="Left Icon" width="70px" height="70px">
                             </a>
                             (HINDI)
                             <a href="https://example.com/left-icon" target="_blank">
-                                <img src="./images/buytickets/yt icon3.png" alt="Right Icon" width="50px" height="50px">
+                                <img src="./Images/Buytickets/youtube.png" alt="Right Icon" width="50px" height="50px">
                             </a>
                         </div>
                         <p id="movie-duration" class="fs-5">2 H 40 MIN</p>

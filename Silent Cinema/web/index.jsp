@@ -33,7 +33,8 @@
                     <li class="nav-item"><a class="nav-link" href="movies.jsp">MOVIES</a></li>
                     <li class="nav-item"><a class="nav-link" href="deals.jsp">DEALS AND EXCLUSIVES</a></li>
                     <li class="nav-item"><a class="btn btn-primary" href="tickets.jsp">BUY TICKETS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./Login.jsp">LOGIN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Logemail.jsp">LOGIN</a></li>
+
                 </ul>
             </div>
         </div>
@@ -72,7 +73,7 @@
                         <div class="card-body">
                             <h5 class="card-title"><%= movie[0] %></h5>
                             <p class="card-text"><%= movie[1] %><br>Silent Cinemas<br><br><%= movie[2] %></p>
-                            <a href="buyTickets.jsp?movie=<%= movie[0] %>" class="btn btn-primary">BUY TICKETS</a>
+                            <a href="./Buytickets.jsp" class="btn btn-primary">BUY TICKETS</a>
                         </div>
                     </div>
                 </div>

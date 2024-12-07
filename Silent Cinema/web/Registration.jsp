@@ -14,12 +14,22 @@
     <title>Create Account</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/Registration.css">
+    <link rel="stylesheet" href="./CSS/Errors.css">
+    
     <script src="./JS/Registration/password.js"></script>
      <script src="./JS/Registration/regvalidation.js"></script>
     <script src="./JS/Registration/existregvalidation.js"></script>
     <script src="./JS/Registration/passcolornote.js"></script>
 </head>
 <body onload="exist()">
+    <script>
+        function toggle(){
+            var element = document.querySelectorAll("#ico");
+            for(let i = 0; i<6; i++){
+                element[i].removeAttribute("style");
+            }    
+        }
+    </script>
      <script>
             //Email
             <% if(GlobalVariables.emaildb != null ){ %> 
@@ -51,27 +61,29 @@
             <input type="text" name = "lname" id = "lname" placeholder="LAST NAME" <% if (GlobalVariables.data[1] != null) { %> value="<%= GlobalVariables.data[1] %>" <% } %>>
             <input type="email" name = "email" id = "email" placeholder="EMAIL" <% if (GlobalVariables.data[2] != null) { %> value="<%= GlobalVariables.data[2] %>" <% } %>>
             <input type="text" name = "tel" id = "tel" placeholder="TELEPHONE NUMBER" <% if (GlobalVariables.data[3] != null) { %> value="<%= GlobalVariables.data[3] %>" <% } %>>
-            <input type="password" name = "pass" id = "pass" placeholder="PASSWORD" <% if (GlobalVariables.data[4] != null) { %> value="<%= GlobalVariables.data[4] %>" <% } %> oninput="keycolor()">  
-            <div id="ico">
-               <i id="icon1" class="fa-solid fa-check"></i>
-               <span id="up">Uppercase needed(A-Z)</span>
-            </div>
-            <div id="ico">
-                <i id="icon2" class="fa-solid fa-check"></i>
-               <span id="lo">Lowercase needed(a-z)</span>
-            </div>
-            <div id="ico">
-                <i id="icon3" class="fa-solid fa-check"></i>
-               <span id="di">Digits needed(0-9)</span>
-            </div>
-            <div id="ico">
-                <i id="icon4" class="fa-solid fa-check"></i>
-               <span id="spc">Special Character(@,#,$,%,^,ect)</span>
-            </div>
-            <div id="ico">
-               <i id="icon5" class="fa-solid fa-check"></i>
-               <span id="len">Length 8-24</span>
-            </div>
+            <input type="password" name = "pass" id = "pass" placeholder="PASSWORD" <% if (GlobalVariables.data[4] != null) { %> value="<%= GlobalVariables.data[4] %>" <% } %> oninput="keycolor()" onclick="toggle();">  
+            
+               <div id="ico" style="display: none;">
+                  <i id="icon1" class="fa-solid fa-check"></i>
+                  <span id="up">Uppercase needed(A-Z)</span>
+               </div>
+               <div id="ico" style="display: none;">
+                  <i id="icon2" class="fa-solid fa-check"></i>
+                  <span id="lo">Lowercase needed(a-z)</span>
+               </div>
+               <div id="ico" style="display: none;">
+                  <i id="icon3" class="fa-solid fa-check"></i>
+                  <span id="di">Digits needed(0-9)</span>
+               </div>
+               <div id="ico" style="display: none;">
+                  <i id="icon4" class="fa-solid fa-check"></i>
+                  <span id="spc">Special Character(@,#,$,%,^,ect)</span>
+               </div>
+               <div id="ico" style="display: none;">
+                  <i id="icon5" class="fa-solid fa-check"></i>
+                  <span id="len">Length 8-24</span>
+               </div>
+           
             <input type="password" name = "cpass" id = "cpass" placeholder="CONFIRM PASSWORD" <% if (GlobalVariables.data[5] != null) { %> value="<%= GlobalVariables.data[5] %>" <% } %>>
             <select name = "gen" id = "gen">
                 <option value="" selected hidden>GENDER</option>

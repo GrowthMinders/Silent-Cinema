@@ -1,15 +1,10 @@
 body {
     background-color: #154e66;
     color: rgb(198, 88, 88);
-    background-image: url('./Images/Login/background img.png');  
-    background-size: cover; /* Ensures the image covers the entire screen */
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .card {
     width: 950px;  
-    height: 600px;
     background-color: #004080;
     display: flex;
     align-items: center; 
@@ -23,8 +18,13 @@ body {
 }
 
 .card .form-control {
-    border: 10px solid #ccc;
-    border-radius: 10px;
+    background-color: #3a659a;
+    color: white;
+    border: none;
+}
+
+.card .form-control::placeholder {
+    color: white;
 }
 
 .card .btn-primary {

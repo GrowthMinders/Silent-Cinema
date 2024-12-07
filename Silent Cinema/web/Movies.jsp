@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Silent Cinema</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./CSS/movies.css">
+  <link rel="stylesheet" href="./CSS/Movies.css">
 </head>
 <body>
   <div class="container my-5">
