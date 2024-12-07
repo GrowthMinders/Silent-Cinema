@@ -86,23 +86,6 @@ select option{
    color: white;
 }
 
-#errors {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #AD1010;
-    color: white;
-    border: 1px solid #AD1010;
-    border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-    font-size: 20px;
-    font-weight: bold;
-    gap: 15px;
-    width:fit-content;
-}
-
 #up,
 #lo,
 #di,

@@ -11,14 +11,17 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import org.mindrot.jbcrypt.BCrypt;
 
-
-
-@WebServlet(name = "LoginServlet", urlPatterns = {"/LoginServlet"})
-public class LoginServlet extends HttpServlet{
-    @Override
+@WebServlet(name = "LoginServletPass", urlPatterns = {"/LoginServletPass"})
+public class LoginServletPass extends HttpServlet {
+    
+  public class match1{
+     public static int state1;
+  }    
+    
+        @Override
  public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException{
      
-     String url ="jdbc:sqlserver://192.168.57.250\\DATABASESERVER:1433;databaseName=Silent;encrypt=true;trustServerCertificate=true";
+     String url ="jdbc:sqlserver://192.168.209.250\\DATABASESERVER:1433;databaseName=Silent;encrypt=true;trustServerCertificate=true";
      String username = "Supun";
      String password = "Rulz@2002"; 
 
@@ -29,28 +32,36 @@ public class LoginServlet extends HttpServlet{
               
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection conn = DriverManager.getConnection(url, username, password);
-                PreparedStatement sql = conn.prepareStatement("SELECT * FROM customer WHERE email = ?");
+                PreparedStatement sql = conn.prepareStatement("SELECT pass FROM customer WHERE email = ?");
                 
                 sql.setString(1, email);
                 
-                ResultSet result = sql.executeQuery();
-                
-                if(result.next()){
-                   String dbpass = result.getString("pass");
-                   if (BCrypt.checkpw(pass, dbpass)){
-                     res.sendRedirect("./index.html");
-                   }else{
-                     res.getWriter().println("Invalid Credentials");
-                   }
-                }else{
-                   res.getWriter().println("Invalid Credentials");
+               ResultSet result = sql.executeQuery();
+            
+            if (result.next()) {
+                String hashedPass = result.getString("pass");
+                if (BCrypt.checkpw(pass, hashedPass)) {
+                    res.sendRedirect("./index.jsp");
+                } else {
+                    match1.state1 = 1;
+                    res.sendRedirect("./Logpassword.jsp");
                 }
-                   
+            }
+   
                 conn.close();
             } catch (Exception ex) {
                 res.getWriter().println(ex.getMessage());
             }
  }
 }
+
+
+
+
+
+
+
+
+
 
     

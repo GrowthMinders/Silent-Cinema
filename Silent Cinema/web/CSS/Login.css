@@ -1,0 +1,45 @@
+body {
+    background-color: #154e66;
+    color: rgb(198, 88, 88);
+}
+
+.card {
+    width: 950px;  
+    background-color: #004080;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: white;
+    border: none;
+}
+
+.card h1 {
+    color: #00CCFF;
+}
+
+.card .form-control {
+    background-color: #3a659a;
+    color: white;
+    border: none;
+}
+
+.card .form-control::placeholder {
+    color: white;
+}
+
+.card .btn-primary {
+    background-color: #0099FF;
+    border: none;
+}
+
+.card .btn-primary:hover {
+    background-color: #007ACC;
+}
+
+.card a {
+    color: #00CCFF;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
