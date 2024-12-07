@@ -1,0 +1,41 @@
+/* Body Styles */
+body {
+    background: linear-gradient(to bottom, #00203F, #004080);
+    color: white;
+}
+
+/* Navigation */
+.nav a {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #00A4E6;
+}
+
+/* Form Section */
+.form-section {
+    background-color: #004080 !important;
+    border-radius: 5px;
+}
+
+.form-section input,
+.form-section textarea {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.form-section button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Contact Details */
+.contact-details {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-details h3 {
+    margin-top: 0;
+}
