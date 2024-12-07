@@ -39,17 +39,8 @@ public class LoginServletEmail extends HttpServlet {
                 ResultSet result = sql.executeQuery();
                 
                 if(result.next()){
-<<<<<<< Updated upstream:Silent Cinema/src/java/Functionality/LoginServlet.java
-                   String dbpass = result.getString("pass");
-                   if (BCrypt.checkpw(pass, dbpass)){
-                     res.sendRedirect("./index.html");
-                   }else{
-                     res.getWriter().println("Invalid Credentials");
-                   }
-=======
                    match.emailrec = email;
                    res.sendRedirect("./Logpassword.jsp");
->>>>>>> Stashed changes:Silent Cinema/src/java/Functionality/LoginServletEmail.java
                 }else{
                    match.state = 1;
                    res.sendRedirect("./Logemail.jsp");
