@@ -5,6 +5,7 @@
 --%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="Header_Footer/Nav.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="./CSS/Home.css">
 </head>
 <body>
+<<<<<<< Updated upstream
     
     <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
@@ -40,6 +42,8 @@
     </header>
 
     
+=======
+>>>>>>> Stashed changes
     <section class="hero text-center py-5">
         <div class="container">
             <h1 class="display-3">Let’s Book Your Movies</h1>
@@ -69,11 +73,11 @@
                 <div class="col-md-4">
                     <div class="card">
                         <img src="<%= movie[3] %>" class="card-img-top" alt="<%= movie[0] %>">
-                        <div class="card-body">
+                        <div class="card-body" onclick="window.location.href='./Film Details.jsp'">
                             <h5 class="card-title"><%= movie[0] %></h5>
                             <p class="card-text"><%= movie[1] %><br>Silent Cinemas<br><br><%= movie[2] %></p>
                             <a href="./Buytickets.jsp" class="btn btn-primary">BUY TICKETS</a>
-                        </div>
+                            </div>
                     </div>
                 </div>
                 <% } %>

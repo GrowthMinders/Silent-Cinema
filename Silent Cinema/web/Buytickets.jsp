@@ -1,10 +1,9 @@
 <%-- 
     Document   : buytickets
-    Created on : Dec 5, 2024, 12:56:46 PM
-    Author     : 💕Isuu✨
+    Created on : Dec 5, 2024, 12:56:46?PM
+    Author     : ?Isuu?
 --%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ include file="Header_Footer/Nav.jsp" %>
 <!DOCTYPE html>
 <html>
     <head>
