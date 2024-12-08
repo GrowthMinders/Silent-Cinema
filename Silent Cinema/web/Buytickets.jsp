@@ -1,17 +1,17 @@
 <%-- 
     Document   : buytickets
-    Created on : Dec 5, 2024, 12:56:46 PM
-    Author     : 💕Isuu✨
+    Created on : Dec 5, 2024, 12:56:46?PM
+    Author     : ?Isuu?
 --%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ include file="Header_Footer/Nav.jsp" %>
 <!DOCTYPE html>
 <html>
     <head>
         <title>Buy Tickets</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./CSS/Buytickets.css">        
+        <link rel="stylesheet" href="./CSS/Buytickets.css">
+        
     </head>
     <body>
         <div id="carouselExample" class="carousel slide">

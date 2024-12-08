@@ -33,6 +33,10 @@
             <span id="errors" style="display: none;">
             </span>
         <div class="card p-4 shadow-lg rounded" style="width: 100%; max-width: 400px;">
+             <div style=" margin-bottom: 5px;">
+                <a href="./index.jsp"><img src="./Images/Logo.png" alt="Logo"  width="80"></a>
+             </div>
+            <p style="font-size: 24px; font-weight: bold;">LOG IN</p>
             <form action="./LoginServletPass" method="post" onsubmit="return logval1();">
                 <div class="mb-3">
                     <input type="password" id="pass" name="pass" placeholder="PASSWORD" class="form-control">

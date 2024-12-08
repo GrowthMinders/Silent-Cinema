@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="Header_Footer/Nav.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,21 +11,6 @@
     <link rel="stylesheet" href="./CSS/ContactUs.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <!-- Navigation Bar -->
-        <header class="bg-dark text-light py-3">
-            <div class="container d-flex justify-content-between align-items-center">
-                <span class="logo fw-bold fs-4">SC Silent Cinemas</span>
-                <nav>
-                    <a href="#" class="text-light text-decoration-none me-3">HOME</a>
-                    <a href="#" class="text-light text-decoration-none me-3">MOVIES</a>
-                    <a href="#" class="text-light text-decoration-none me-3">DEALS AND EXCLUSIVES</a>
-                    <a href="#" class="btn btn-primary me-3">BUY TICKETS</a>
-                    <a href="#" class="text-light text-decoration-none">LOGIN</a>
-                </nav>
-            </div>
-        </header>
-
         <!-- Main Content -->
         <main class="container my-5">
             <div class="row g-4">
