@@ -1,0 +1,137 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background:rgb(29, 77, 101);
+}
+
+ /* navbar */
+.navbar{
+  background:darkblue;
+}
+.vr{
+  color: whitesmoke;
+  width:1px;
+}
+
+.navbar a:hover {
+  background-color: #00aaff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #fff;
+} 
+
+/* Events section */
+.events {
+    padding: 20px 40px;
+}
+
+.events h1 {
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/* Event card styles */
+.event-card {
+    background-color:#1e3045;;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left:50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.heading2{
+  text-align:center;
+  margin-left:150px;
+}
+
+.event-card h3 {
+    color: rgb(174, 162, 141);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.7em;
+}
+
+
+
+.event-card .card-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.event-card p {
+    flex: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-right: 15px;
+    color:white;
+}
+
+.image1{
+    width: 250px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right:100px;
+
+}
+
+.image2{
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom:20px;
+
+}
+
+
+/* Single Contact Section */
+.contact-section {
+  background-color: #1e3045;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-left:50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+}
+
+.contact-text{
+  font-size: 30px;
+  color: white;
+  margin-right:400px;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right:30px;
+  background-color:#008acb;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #a2bdc9;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+
