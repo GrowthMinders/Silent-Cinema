@@ -53,7 +53,7 @@
         </div>
     <div class="container">
         <div class="logo">
-            <a href="./index.html"><img src="./Images/Logo.png" alt="Logo"></a>
+            <a href="./index.jsp"><img src="./Images/Logo.png" alt="Logo"></a>
         </div>
         <h1>CREATE ACCOUNT</h1>
              <form action = "RegisterServlet" method="post" name="reg" onsubmit="return validate()">

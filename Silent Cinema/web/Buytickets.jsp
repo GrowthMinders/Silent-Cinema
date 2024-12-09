@@ -23,11 +23,11 @@
                         <h1 id="movie-name" class="mb-2">SINGHAM AGAIN</h1>
                         <div id="movie-lang" class="mb-2">
                             <a href="https://example.com/left-icon" target="_blank">
-                                <img src="./images/Buytickets/ticket.png" alt="Left Icon" width="70px" height="70px">
+                                <img src="./Images/Buytickets/ticket.png" alt="Left Icon" width="70" height="70">
                             </a>
                             (HINDI)
                             <a href="https://example.com/left-icon" target="_blank">
-                                <img src="./Images/Buytickets/youtube.png" alt="Right Icon" width="50px" height="50px">
+                                <img src="./Images/Buytickets/youtube.png" alt="Right Icon" width="50" height="50">
                             </a>
                         </div>
                         <p id="movie-duration" class="fs-5">2 H 40 MIN</p>
@@ -35,6 +35,7 @@
             </div>
             </div>
         </div>
+        <%@ include file="Header_Footer/Footer.jsp" %> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

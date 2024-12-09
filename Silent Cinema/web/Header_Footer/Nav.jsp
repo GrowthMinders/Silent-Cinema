@@ -12,11 +12,9 @@
             out.println("</head>");
             out.println("<body>");
             out.println("    <header>");
-            out.println("        <nav class=\"navbar navbar-expand-lg navbar-dark\" style=\"background-color: #1E0890;\">");
+            out.println("        <nav class=\"navbar navbar-expand-lg navbar-dark\" style=\"background-color: #002c44;\">");
             out.println("            <div class=\"container-fluid\">");
-            out.println("                <a class=\"navbar-brand\" href=\"" + request.getContextPath() + "/index.jsp\">");
-            out.println("                    <img src=\"" + request.getContextPath() + "/Images/Logo.png\" alt=\"Silent Cinemas Logo\" style=\"width: 50px; height: auto;\">");
-            out.println("                </a>");
+            out.println("<img id=\"logo\" src=\"" + request.getContextPath() + "/Images/Logo.png\" alt=\"Silent Cinemas Logo\" style=\"width: 50px; height: auto;\" onclick=\"window.location.href='" + request.getContextPath() + "/index.jsp'\">");
             out.println("                <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">");
             out.println("                    <span class=\"navbar-toggler-icon\"></span>");
             out.println("                </button>");
