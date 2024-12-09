@@ -1,12 +1,7 @@
-body {
-    background: linear-gradient(to bottom, #035661, #1b2735);
-    height: 100vh;
-    margin: 0;
+body{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
-
 .card {
     background-color: #073a66;
     border: none;
@@ -38,4 +33,9 @@ body {
 
 .btn-success:hover {
     background-color: #218838;
+}
+
+.container{
+    margin-top: 54px;
+    margin-bottom: 54px;
 }
