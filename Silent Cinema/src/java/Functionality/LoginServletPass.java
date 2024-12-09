@@ -4,6 +4,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -32,15 +33,20 @@ public class LoginServletPass extends HttpServlet {
               
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection conn = DriverManager.getConnection(url, username, password);
-                PreparedStatement sql = conn.prepareStatement("SELECT pass FROM customer WHERE email = ?");
+                PreparedStatement sql = conn.prepareStatement("SELECT pass,fname,lname FROM customer WHERE email = ?");
                 
                 sql.setString(1, email);
                 
                ResultSet result = sql.executeQuery();
             
             if (result.next()) {
+                String unamef = result.getString("fname");
+                String unamel = result.getString("lname");
+                String uname = unamef +" "+ unamel;
                 String hashedPass = result.getString("pass");
                 if (BCrypt.checkpw(pass, hashedPass)) {
+                    HttpSession name = req.getSession();
+                    name.setAttribute("name",uname);
                     res.sendRedirect("./index.jsp");
                 } else {
                     match1.state1 = 1;

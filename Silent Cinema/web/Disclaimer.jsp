@@ -11,15 +11,15 @@
 </head>
 
 <body>
-  <div class="container" style="margin-top: 123px; margin-bottom: 123px;">
+  <div class="container" style="margin-top: 148px; margin-bottom: 148px;">
     <div class="text-dark p-4">
       <h1 class="text-left mb-4">DISCLAIMER</h1>
       <p>
         This website, compiled by Silent Cinemas and Theaters, provides information solely for informational purposes. Silent Cinemas and Theaters do not guarantee the accuracy, completeness, or suitability of any information on the site. The site content is offered "as is," without warranties, and may contain errors, bugs, or harmful components. Users should verify information independently before making any decisions.
-      </p>
+      </p><br>
       <p>
         Silent Cinemas and Theaters disclaim all implied warranties to the maximum extent permitted by law. Links to third-party sites are provided only for reference, without endorsement. Silent Cinemas and Theaters accept no liability for any third-party content accessed through these links.
-      </p>
+      </p><br>
       <p>
         By using this site, users agree that Silent Cinemas and Theaters are not liable for any direct, indirect, or consequential damages arising from the site's use, its content, or linked resources. Users also agree to indemnify Silent Cinemas and Theaters against any claims related to using the site.
       </p>
