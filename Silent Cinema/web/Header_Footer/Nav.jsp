@@ -24,7 +24,14 @@
             out.println("                        <li class=\"nav-item\"><a class=\"nav-link text-white\" href=\"" + request.getContextPath() + "/Movies.jsp\">MOVIES</a></li>");
             out.println("                        <li class=\"nav-item\"><a class=\"nav-link text-white\" href=\"" + request.getContextPath() + "/Offers.jsp\">DEALS AND EXCLUSIVES</a></li>");
             out.println("                        <li class=\"nav-item highlight\"><a class=\"nav-link text-white\" href=\"" + request.getContextPath() + "/Buytickets.jsp\">BUY TICKETS</a></li>");
-            out.println("                        <li class=\"nav-item\"><a class=\"nav-link text-white\" href=\"" + request.getContextPath() + "/Logemail.jsp\">LOGIN</a></li>");
+            //Checkin whether user is logged in
+            HttpSession name = request.getSession(false);
+            if (name != null && name.getAttribute("uname") != null){
+               out.println("                        <li class=\"nav-item\"><a class=\"nav-link text-white\" href=\"" + request.getContextPath() + "./MyProfile.jsp\">My Profile</a></li>");
+            }else{
+               out.println("                        <li class=\"nav-item\"><a class=\"nav-link text-white\" href=\"" + request.getContextPath() + "/Logemail.jsp\">LOGIN</a></li>");
+            }
+
             out.println("                    </ul>");
             out.println("                </div>");
             out.println("            </div>");

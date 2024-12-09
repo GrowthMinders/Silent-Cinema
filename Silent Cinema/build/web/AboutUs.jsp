@@ -9,11 +9,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./CSS/AboutUs.css">
 </head>
-<body>
-    
+
+<body style="background-color: #336a81;">
 <section id="about-us" class="container my-5">
-  <div class="text-white p-3">
-    <h3 class="text-left mb-4 fw-bold">ABOUT US</h3>
+  <div class="text-dark p-3">
+    <h3 class="text-left mb-3 fw-bold">ABOUT US</h3>
     <h2 class="text-center text-dark mb-4 fw-bold">About Silent Cinemas</h2>
     <p class="text-start">
       Dedicated toward raising the bar in Sri Lanka's cinema experience, Silent aims to provide our patrons with all the flare of old-school movie theaters, coupled with state-of-the-art modernity and comfort, consistent with international standards.
@@ -22,7 +22,7 @@
       <img src="./Images/Logo.png" alt="Silent Cinemas Logo Sri Lanka" class="img-fluid" style="width: 200px;">
     </div>
     <hr class="my-4" style="border-color: white;">
-    <div class="row mt-5">
+    <div class="row mt-4" style="margin-bottom: 21px;">
       <div class="col-md-6">
         <h4 class="fw-bold text-dark">VISION</h4>
         <p>
@@ -38,7 +38,7 @@
     </div>
   </div>
 </section>
-  
+
 <%@ include file="Header_Footer/Footer.jsp" %> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -16,7 +16,7 @@
 <body>
    
 
-  <main class="offers-container  p-5 m-5">
+    <main class="offers-container  p-6 m-5  mb-5 pt-5 pb-5">
   <!-- Early Bird Offer -->
     <div class="offer-card col-md-6">
       <img src="./Images/Offers/Offer-1.jpg" alt="Early Bird Offer" class="card-image-top offer-image">
