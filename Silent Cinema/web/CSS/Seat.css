@@ -1,0 +1,364 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply background and text styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #001f3f, #002c44);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #002c44;
+  padding: 10px 40px;
+}
+
+.navbar-logo {
+  width: 50px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-nav li {
+  font-size: 16px;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-nav a:hover {
+  color: #ffcc00;
+}
+
+/* Seat Selection Section */
+.seat-selection {
+  margin: 20px auto;
+  width: 90%;
+  text-align: left;
+  padding-left: 30px; /* Added padding to the left */
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.movie-info {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.movie-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.movie-details {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px; /* Space between elements */
+  font-size: 16px;
+  color: #d3d3d3; /* Light grey color for the details */
+  margin-top: 5px;
+}
+
+.movie-location i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.movie-details-line {
+  border: none;
+  border-top: 1px solid #000;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.movie-location, .movie-date, .movie-format {
+  margin-bottom: 0;
+}
+
+/* Showtime Buttons */
+.showtimes {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.showtime-label {
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #d3d3d3;
+}
+
+/* Horizontal line under ShowTime */
+.showtime-line {
+  border: none;
+  border-top: 1px solid #000; /* Thin black line */
+  margin-bottom: 30px; /* Space below the line */
+  margin-top: -10px; /* Negative margin to adjust the line position */
+}
+
+.time-button {
+  padding: 8px 20px; /* Fixed size for buttons */
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 14px;
+  width: auto; /* Make sure the buttons stay the same size */
+}
+
+.time-button:hover {
+  background-color: #0066cc;
+}
+
+.time-button:active {
+  background-color: #005bb5;
+}
+
+.seat-layout {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 80px; /*gap between sections*/
+}
+
+.seat-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between rows */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 5px; /* Space between seats */
+}
+
+.seat {
+  width: 30px; /* Adjust for responsiveness */
+  height: 30px;
+  background-color: #ccc;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px; /* Make the text smaller */
+  text-align: center;
+  line-height: 30px; /* Center the text vertically */
+  margin: 0;
+  padding: 0;
+
+}
+.seat-layout {
+  align-items: flex-start; /* Align sections properly */
+  padding: 10px 0; /* Add padding around the layout */
+
+}
+
+.seat:hover {
+  background-color: blue;
+  color: white;
+}
+
+.seat.reserved {
+  background-color: red;
+  cursor: not-allowed;
+}
+
+.screenImg {
+  margin-top: 20px; /* Add some space above the screen */
+  text-align: center; /* Center the image */
+}
+
+.screen {
+  width: 80%; /* Adjust width to fit the layout */
+  max-width: 600px; /* Limit the maximum size for large screens */
+  margin: 0 auto; /* Center within its container */
+  height: auto; /* Maintain the aspect ratio */
+  background-blend-mode: lighten;
+ 
+}
+
+.status-legend {
+  display: flex; /*aligns items horizontally*/
+  justify-content: center;
+  gap: 20px; /* Space between status items */
+  margin-bottom: 15px; /* Space between legend and message */
+  flex-wrap: nowrap; /* Allow wrapping on smaller screens */
+
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+}
+
+.color-box {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  border-radius: 3px; /* Optional: Make the boxes slightly rounded */
+}
+
+.color-box.blue {
+  background-color: blue;
+}
+
+.color-box.gray {
+  background-color: lightgray;
+}
+
+.color-box.light-blue {
+  background-color: rgb(93, 193, 226);
+}
+
+
+.ticket-message {
+  font-size: 16px;
+  margin-bottom: 20px; /* Space between message and buttons */
+  text-align: center;
+  color: white;
+
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+
+}
+
+.nav-button {
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+  background-color: #007bff; /* Blue color for buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 120px; /* Fixed width for consistency */
+  text-align: center; /* Center-align text */
+  margin-bottom: 10px; /* Add space under each button */
+}
+.nav-button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.nav-button:active {
+  background-color: #004080; /* Even darker shade for click */
+}
+.status-divider {
+  border: none; /* Remove default border */
+  border-top: 1px solid black; /* Match previous lines */
+  margin: 20px auto; /* Space above and below */
+  width: calc(100% - 10px); /* Adjust dynamically to match the previous lines */
+}
+.message-divider {
+  border: none;
+  border-top: 1px solid black;
+  margin: 20px auto; /* Space above and below */
+  width: calc(100% - 10px); /* Match the same width as the status line */
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none; /* Hides menu items on mobile */
+  }
+
+  .navbar-toggler {
+    display: block; /* Shows hamburger menu icon */
+  }
+
+  .seat-selection {
+    width: 100%;
+  }
+
+  .time-button {
+    font-size: 12px; /* Smaller text for buttons on mobile */
+    padding: 6px 15px;
+  }
+
+  /* Adjust seat number size for mobile */
+  .seat-number {
+    width: 25px; /* Smaller size for mobile */
+    height: 25px;
+    font-size: 12px;
+  }
+
+  /* Showtime line container adjustments */
+  .showtime-line-container {
+    margin-top: -5px; /* Adjust the negative margin for smaller screens */
+  }
+
+  .showtime-label {
+    font-size: 14px;
+  }
+  
+  .seat-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .seat {
+    width: 25px;
+    height: 25px;
+    font-size: 10px; /* Smaller text for seats */
+  }
+  .screen {
+    width: 100%; /* Make the screen take full width on small screens */
+  }
+
+  .status-legend {
+    flex-direction: column; /* Stack the legend vertically */
+    align-items: center; /* Center align items */
+    gap: 5px; /* Adjust spacing for smaller screens */
+
+  }
+
+  .ticket-message {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .navigation-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Add space between stacked buttons */
+    align-items: center; /* Center buttons */
+    
+  }
+
+  .nav-button {
+    width: 80%; /* Make buttons wider on smaller screens */
+  }
+}
+
+
+
