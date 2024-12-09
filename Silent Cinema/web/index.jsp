@@ -36,11 +36,10 @@
             <div class="row g-4">
                
                 <%
-                    // Dummy movie data - Replace with database logic
                     String[][] movies = {
-                        {"Fighter", "10.30 AM | 1.30 PM | 4.30 PM", "1500 LKR onwards", "images/fighter.png"},
+                        {"Fighter", "10.30 AM | 1.30 PM | 4.30 PM", "1500 LKR onwards", "192.168.209./fighter.png"},
                         {"Avatar The Last Airbender", "10.30 AM | 1.30 PM | 7.30 PM", "1450 LKR onwards", "images/avatar.png"},
-                        {"Kill", "1.30 PM | 8.00 PM", "1600 LKR onwards", "images/kill.webp"}
+                        {"Kill", "1.30 PM | 8.00 PM", "1600 LKR onwards", "file:///D:/Web%20Content/kill.webp"}
                     };
                     for (String[] movie : movies) {
                 %>

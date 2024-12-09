@@ -1,3 +1,9 @@
+<%-- 
+    Document   : Edit Profile
+    Created on : Dec 9, 2024, 3:48:44?PM
+    Author     : Supun
+--%>
+
 <%@ include file="Header_Footer/Nav.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,8 +15,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/Edit Profile.css">
 </head>
-<body class="bg-dark text-white">
-    <div class="container mt-5">
+<body class="text-white">
+<center><div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-8 col-sm-12">
                 <div class="card p-4">
@@ -59,7 +65,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div></center>
+
                                     
    <%@ include file="Header_Footer/Footer.jsp" %>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

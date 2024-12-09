@@ -46,7 +46,7 @@ public class LoginServletPass extends HttpServlet {
                 String hashedPass = result.getString("pass");
                 if (BCrypt.checkpw(pass, hashedPass)) {
                     HttpSession name = req.getSession();
-                    name.setAttribute("name",uname);
+                    name.setAttribute("uname",uname);
                     res.sendRedirect("./index.jsp");
                 } else {
                     match1.state1 = 1;

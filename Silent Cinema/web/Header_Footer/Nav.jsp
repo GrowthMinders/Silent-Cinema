@@ -27,7 +27,7 @@
             //Checkin whether user is logged in
             HttpSession name = request.getSession(false);
             if (name != null && name.getAttribute("uname") != null){
-               out.println("                        <li class=\"nav-item\"><a class=\"nav-link text-white\" href=\"" + request.getContextPath() + "./MyProfile.jsp\">My Profile</a></li>");
+               out.println("                        <li class=\"nav-item\"><a class=\"nav-link text-white\" href=\"./MyProfile.jsp\">MY PROFILE</a></li>");
             }else{
                out.println("                        <li class=\"nav-item\"><a class=\"nav-link text-white\" href=\"" + request.getContextPath() + "/Logemail.jsp\">LOGIN</a></li>");
             }
