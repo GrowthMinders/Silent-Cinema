@@ -65,4 +65,3 @@ public class Footer {
     Footer footer = new Footer();
     footer.renFoot(out);
 %>
- 

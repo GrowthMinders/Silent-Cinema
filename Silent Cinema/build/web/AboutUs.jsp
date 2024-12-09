@@ -9,7 +9,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./CSS/AboutUs.css">
 </head>
-
 <body>
     
 <section id="about-us" class="container my-5">
@@ -39,10 +38,8 @@
     </div>
   </div>
 </section>
-
-
+  
 <%@ include file="Header_Footer/Footer.jsp" %> 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

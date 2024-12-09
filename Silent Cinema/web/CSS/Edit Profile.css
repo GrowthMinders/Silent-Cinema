@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(to bottom, #035661, #1b2735);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #073a66;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 100%; /* Ensures responsiveness */
+    max-width: 500px; /* Limits the card's maximum width */
+}
+
+.card h2 {
+    color: #fff;
+}
+.profile-image img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.mb-3 {
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #e03b3b;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}

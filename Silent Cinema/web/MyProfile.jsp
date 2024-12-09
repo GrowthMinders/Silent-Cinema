@@ -23,6 +23,7 @@
       <p><strong>NIC Number:</strong> 123456789765</p><br>
       <p><strong>Password:</strong> *********</p><br>
     </div>
+
     <button class="edit-btn" onclick="prompt('Enter Your credentials')">Edit Profile</button>
     <%@ include file="Header_Footer/Footer.jsp" %>
   </div>

@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    
 <section id="about-us" class="container my-5">
   <div class="text-white p-3">
     <h3 class="text-left mb-4 fw-bold">ABOUT US</h3>
@@ -40,9 +39,7 @@
   </div>
 </section>
 
-
 <%@ include file="Header_Footer/Footer.jsp" %> 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
