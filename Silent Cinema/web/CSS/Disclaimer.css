@@ -1,0 +1,18 @@
+body {
+  background:#0f3751;
+  font-family: Arial, sans-serif;
+}
+.vr{
+  color:black;
+  width:1px;
+}
+.navbar a:hover {
+  background-color: #00aaff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #fff;
+} 
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

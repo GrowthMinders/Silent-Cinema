@@ -18,32 +18,6 @@
     <link rel="stylesheet" href="./CSS/Home.css">
 </head>
 <body>
-<<<<<<< Updated upstream
-    
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="./index.jsp">
-                <img src="./Images/Logo.png" alt="Logo" width="50" height="auto">
-                Silent Cinemas
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.jsp">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="movies.jsp">MOVIES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="deals.jsp">DEALS AND EXCLUSIVES</a></li>
-                    <li class="nav-item"><a class="btn btn-primary" href="tickets.jsp">BUY TICKETS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./Logemail.jsp">LOGIN</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    
-=======
->>>>>>> Stashed changes
     <section class="hero text-center py-5">
         <div class="container">
             <h1 class="display-3">Let’s Book Your Movies</h1>
@@ -84,8 +58,7 @@
             </div>
         </div>
     </section>
-
-    
+   <%@ include file="Header_Footer/Footer.jsp" %>           
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

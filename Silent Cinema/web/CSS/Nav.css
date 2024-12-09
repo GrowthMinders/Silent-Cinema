@@ -34,3 +34,7 @@
   border-radius: 5px;
   color: #ffffff !important;
 }
+
+#logo:hover{
+    cursor: pointer;
+}

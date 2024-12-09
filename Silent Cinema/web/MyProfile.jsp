@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="Header_Footer/Nav.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +23,9 @@
       <p><strong>NIC Number:</strong> 123456789765</p><br>
       <p><strong>Password:</strong> *********</p><br>
     </div>
-    <button class="edit-btn" onclick="alert('Edit functionality is disabled!')">Edit Profile</button>
+
+    <button class="edit-btn" onclick="prompt('Enter Your credentials')">Edit Profile</button>
+    <%@ include file="Header_Footer/Footer.jsp" %>
   </div>
 </body>
 </html>
