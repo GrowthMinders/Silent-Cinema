@@ -57,7 +57,7 @@
         <div class="container">
         <section class="contact-section">
             <p class="contact-text">Want to get in touch with us.</p>
-            <a href="./ContactUS.jsp" class="contact-button">CONTACT US</a>   
+            <a href="./Contact US.jsp" class="contact-button">CONTACT US</a>   
         </section>
         </div>
     </main>

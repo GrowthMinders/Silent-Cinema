@@ -22,7 +22,7 @@
                     <h2 id="movie-label" class="fs-5 mb-3">NOW SHOWING AT SILENT CINEMA</h2>
                         <h1 id="movie-name" class="mb-2">SINGHAM AGAIN</h1>
                         <div id="movie-lang" class="mb-2">
-                            <a href="https://example.com/left-icon" target="_blank">
+                            <a href="./Seat.jsp" target="_blank">
                                 <img src="./Images/Buytickets/ticket.png" alt="Left Icon" width="70" height="70">
                             </a>
                             (HINDI)

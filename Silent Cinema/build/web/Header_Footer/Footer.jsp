@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer Example</title>
-    <link rel="stylesheet" href="./CSS/Footer.css">
+    
 </head>
 <body>
  <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%! 
 public class Footer {
     public void renFoot(jakarta.servlet.jsp.JspWriter out) throws java.io.IOException {
+        out.println("<link rel=\"stylesheet\" href=\"./CSS/Footer.css\">");
         out.println("<footer class=\"footer\">");
         out.println("  <div class=\"container-fluid\">");
         out.println("    <div class=\"row\">");
@@ -34,7 +35,7 @@ public class Footer {
         out.println("                    </p>");
         out.println("                </div>");
         out.println("                <div class=\"col-md-6 nav-links\">");
-        out.println("                    <a href=\"#\">CAREERS</a>");
+        out.println("                    <a href=\"./Careers.jsp\">CAREERS</a>");
         out.println("                    <a href=\"./Disclaimer.jsp\">DISCLAIMER</a>");
         out.println("                    <a href=\"./Events.jsp\">EVENTS</a>");
         out.println("                    <a href=\"./TC.jsp\">TERMS AND CONDITIONS</a>");
@@ -69,3 +70,4 @@ public class Footer {
 
 </body>
 </html>
+
