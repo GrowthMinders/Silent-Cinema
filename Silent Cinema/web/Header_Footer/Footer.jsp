@@ -11,7 +11,7 @@
 <%! 
 public class Footer {
     public void renFoot(jakarta.servlet.jsp.JspWriter out) throws java.io.IOException {
-        out.println("<link rel=\"stylesheet\" href=\"./CSS/Footer.css\">");
+        out.println("<link rel=\"stylesheet\" href=\"./Header_Footer/Footer.css\">");
         out.println("<footer class=\"footer\">");
         out.println("  <div class=\"container-fluid\">");
         out.println("    <div class=\"row\">");
