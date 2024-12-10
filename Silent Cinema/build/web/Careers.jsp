@@ -1,8 +1,10 @@
 <%-- 
     Document   : careers
-    Created on : Dec 9, 2024, 7:01:16?PM
-    Author     : ?Isuu?
+    Created on : Dec 9, 2024, 7:01:16 PM
+    Author     : 💕Isuu✨
 --%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -44,6 +46,7 @@
                 </div>
               </div>
             </div>
+
             <div class="col-12 col-md-6 col-lg-4 col-xl-4 vacancy-card">
               <div class="card h-100 shadow-sm">
                 <img src="./Images/Carreer/2.jpg" class="card-img-top" alt="Vacancy Poster 1">

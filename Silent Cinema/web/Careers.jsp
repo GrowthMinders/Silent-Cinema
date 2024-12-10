@@ -1,8 +1,10 @@
 <%-- 
     Document   : careers
-    Created on : Dec 9, 2024, 7:01:16?PM
-    Author     : ?Isuu?
+    Created on : Dec 9, 2024, 7:01:16 PM
+    Author     : 💕Isuu✨
 --%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -94,7 +96,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
       <%@ include file="Header_Footer/Footer.jsp" %> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>

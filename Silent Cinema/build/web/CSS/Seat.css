@@ -180,8 +180,6 @@ html, body {
 .seat-selection-color-box.light-blue {
   background-color: rgb(93, 193, 226);
 }
-
-
 .seat-selection-ticket-message {
   font-size: 16px;
   margin-bottom: 20px;
@@ -215,7 +213,6 @@ html, body {
   cursor: pointer;
   font-size: 14px;
 }
-
 
 .nav-button-back:hover, 
 .nav-button-continue:hover{
