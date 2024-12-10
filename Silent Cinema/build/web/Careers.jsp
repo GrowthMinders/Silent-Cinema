@@ -14,41 +14,42 @@
         <link rel="stylesheet" href="./CSS/Careers.css">
     </head>
     <body>
+        <%@ include file="Header_Footer/Nav.jsp" %>
         <div class="des">
             <div>
-                <h4 class="text-uppercase text-white txt">careers</h4>
+                <h1 class="text-center mb-5 mt-5">Carreers</h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-5 col-12 text-center">
                     <p class="text-uppercase text-white"><small>Work at Silent Cinemas</small></p>
-                  <img src="Logo11.png" class="img-fluid mb-3" alt="Scope Cinemas Logo" style="max-width: 250px;">
                 </div>
                 <div class="col-lg-8 col-md-7 col-12">
 
-                  <p class="text-white">
-                    Silent Cinemas is set to give Sri Lanka its first ever international standard cinema multiplex<br> at Homagama in 2018. Dedicated towards raising the bar in Sri Lanka’s cinema experience,<br> our aim is to provide Sri Lankans with all the flare of old school movie theatres,<br> coupled with state of the art modernity and comfort consistent with international standards.
+                  <p class="text-dark">
+                    Silent Cinemas is set to give Sri Lanka its first ever international standard cinema multiplex<br> at Homagama in 2018. Dedicated towards raising the bar in Sri Lanka?s cinema experience,<br> our aim is to provide Sri Lankans with all the flare of old school movie theatres,<br> coupled with state of the art modernity and comfort consistent with international standards.
                   </p>
-                  <p class="text-white">
-                    From the box office toppers that will be airing throughout the year, to the handpicked F&B brands<br> right down to the uber comfy seating – Silent Cinemas is fast-tracking the future of Sri Lanka’s <br> cinema sphere.And you have an opportunity to be a part of that change.
+                  <p class="text-dark">
+                    From the box office toppers that will be airing throughout the year, to the handpicked F&B brands<br> right down to the uber comfy seating ? Silent Cinemas is fast-tracking the future of Sri Lanka?s <br> cinema sphere.And you have an opportunity to be a part of that change.
                   </p>
                 </div>
             </div>
         </div>
-        <div class="container py-5 vacancies-container">
-          <h1 class="text-center mb-4">Current Vacancies</h1>
-          <div class="row g-4 vacancy-cards">
-            <div class="col-12 col-md-6 col-lg-4 col-xl-2 vacancy-card">
+        <div class="container vacancies-container mb-5">
+          <h1 class="text-center mb-5">Current Vacancies</h1>
+          <div class="row  vacancy-cards">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 vacancy-card">
               <div class="card h-100 shadow-sm">
-                <img src="job vc1.jpg" class="card-img-top" alt="Vacancy Poster 1">
+                <img src="./Images/Carreer/1.jpg" class="card-img-top" alt="Vacancy Poster 1">
                 <div class="card-body text-center">
                   <h6 class="text-uppercase">we are hiring !</h6>
                   <button class="apply-btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</button>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-2 vacancy-card">
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-4 vacancy-card">
               <div class="card h-100 shadow-sm">
-                <img src="job vc2.jpg" class="card-img-top" alt="Vacancy Poster 1">
+                <img src="./Images/Carreer/2.jpg" class="card-img-top" alt="Vacancy Poster 1">
                 <div class="card-body text-center">
                   <h6 class="text-uppercase">we are hiring !</h6>
                   <button class="apply-btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</button>
@@ -97,7 +98,7 @@
                 </div>
             </div>
         </div>
-
+      <%@ include file="Header_Footer/Footer.jsp" %> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
