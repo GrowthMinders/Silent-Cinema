@@ -1,0 +1,14 @@
+.status-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.icon {
+    margin-bottom: 1rem;
+}
+.icon img {
+    width: 80px;
+    height: 80px;
+}

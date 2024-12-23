@@ -1,0 +1,25 @@
+/* Custom styling for modal header */
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Custom styling for the modal title */
+.modal-title {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Custom styling for the modal body */
+.modal-body ul {
+    padding-left: 1.5rem;
+}
+
+.modal-body ul li {
+    margin-bottom: 0.75rem;
+}
+
+/* Custom styling for footer buttons */
+.modal-footer .btn {
+    padding: 0.5rem 1.5rem;
+}

@@ -44,9 +44,13 @@
                 <input type="email" id="email" name="email" value="<%= match.emailrec%>" hidden>
                 <button type="submit" class="btn btn-primary w-100">Login</button>
             </form>
+                
+           <form name = "resetpass" action="./Passwordreset" method="post">
             <div class="text-center mt-3">
-                <a href="./Forgotpw.jsp" class="text-decoration-none">Forgot Password?</a>
+                <input type="email" id="email" name="email" value="<%= match.emailrec%>" hidden>
+                <a href="#" class="text-decoration-none" onclick="document.forms['resetpass'].submit();">Forgot Password?</a>
             </div>
+           </form>    
         </div>
     </div>
     

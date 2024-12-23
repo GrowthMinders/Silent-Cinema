@@ -22,7 +22,7 @@ public class LoginServletPass extends HttpServlet {
         @Override
  public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException{
      
-     String url ="jdbc:sqlserver://192.168.209.250\\DATABASESERVER:1433;databaseName=Silent;encrypt=true;trustServerCertificate=true";
+     String url ="jdbc:sqlserver://192.168.121.250\\DATABASESERVER:1433;databaseName=Silent;encrypt=true;trustServerCertificate=true";
      String username = "Supun";
      String password = "Rulz@2002"; 
 
@@ -40,9 +40,7 @@ public class LoginServletPass extends HttpServlet {
                ResultSet result = sql.executeQuery();
             
             if (result.next()) {
-                String unamef = result.getString("fname");
-                String unamel = result.getString("lname");
-                String uname = unamef +" "+ unamel;
+                String uname = result.getString("fname");
                 String hashedPass = result.getString("pass");
                 if (BCrypt.checkpw(pass, hashedPass)) {
                     HttpSession name = req.getSession();

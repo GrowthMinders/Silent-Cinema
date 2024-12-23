@@ -18,7 +18,7 @@
 
     <main class="offers-container  p-6 m-5  mb-5 pt-5 pb-5">
   <!-- Early Bird Offer -->
-    <div class="offer-card col-md-6">
+    <div class="offer-card col-md-6 mb-3">
       <img src="./Images/Offers/Offer-1.jpg" alt="Early Bird Offer" class="card-image-top offer-image">
       <div class="card-body">
         <h3 class="card-title">Early Bird:<img src="./Images/Offers/Offer-11.jpg" align="center" alt="Special Offer" class="offer-sticker1"></h3>

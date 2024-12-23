@@ -22,7 +22,7 @@ public class LoginServletEmail extends HttpServlet {
      @Override
  public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException{
      
-     String url ="jdbc:sqlserver://192.168.209.250\\DATABASESERVER:1433;databaseName=Silent;encrypt=true;trustServerCertificate=true";
+     String url ="jdbc:sqlserver://192.168.121.250\\DATABASESERVER:1433;databaseName=Silent;encrypt=true;trustServerCertificate=true";
      String username = "Supun";
      String password = "Rulz@2002"; 
 

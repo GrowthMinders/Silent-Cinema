@@ -20,7 +20,7 @@
                         <p>
                             If you wish to contact us via email, please fill the following form, and we will get in touch with you at the earliest.
                         </p>
-                        <form action="processContactForm.jsp" method="post">
+                        <form action="./ContactServlet" method="post">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name:</label>
                                 <input type="text" id="name" name="name" class="form-control" placeholder="Enter Your Name" required>
@@ -31,7 +31,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="phone" class="form-label">Mobile Number:</label>
-                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Ex: 0xxxxxxxxx" required>
+                                <input type="tel" id="tel" name="tel" class="form-control" placeholder="Ex: 0xxxxxxxxx" required>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message:</label>
