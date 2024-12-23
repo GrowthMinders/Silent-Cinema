@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #343a40;
+    min-height: 100vh;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar .profile {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sidebar .profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #17a2b8;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.main-content .header {
+    margin-bottom: 20px;
+}
+
+.row .stat-box {
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.stat-box.users {
+    background-color: #007bff;
+}
+
+.stat-box.theatres {
+    background-color: #28a745;
+}
+
+.stat-box.movies {
+    background-color: #ffc107;
+}
+
+.stat-box.bookings {
+    background-color: #dc3545;
+}
+
+.stat-box a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}

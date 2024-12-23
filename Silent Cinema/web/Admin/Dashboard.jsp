@@ -122,7 +122,6 @@
                        }
 
                %>     
-    
     <div class="main-content">
         <div class="header mb-4">
             <h1>Dashboard</h1>
@@ -156,6 +155,7 @@
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="stat-box bookings">
+
                     <h2 id="booking-count"></h2>
                     <p>Timings</p>
                     <p style="font-weight: bold; color: black;">(<%= timingcount%>)</p>
