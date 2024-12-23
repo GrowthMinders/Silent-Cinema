@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Centering on full screen */
+  }
+  
+  /* Container */
+  .container {
+    width: 80%; /* Responsive width */
+    max-width: 1200px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading */
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
+  }
+  
+.delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.delete-button .icon {
+    width: 20px;
+    height: auto;
+}
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f8f9fa;
+  }
+  
+  #theater{
+    width: 250px;
+    height: 100px;
+  }
+  
+  /* Edit Link */
+  .edit-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .edit-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Checkboxes */
+  input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .btn-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .container {
+      width: 95%;
+    }
+  }
+  

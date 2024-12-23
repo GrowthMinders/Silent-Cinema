@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div class="container" style="margin-top: 148px; margin-bottom: 148px;">
+  <div class="container" style="margin-top: 178px; margin-bottom: 148px;">
     <div class="text-dark p-4">
       <h1 class="text-left mb-4">DISCLAIMER</h1>
       <p>

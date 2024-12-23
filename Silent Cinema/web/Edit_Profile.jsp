@@ -3,6 +3,10 @@
     Created on : Dec 9, 2024, 3:48:44?PM
     Author     : Supun
 --%>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.*" %>
+<%@ page import="jakarta.servlet.http.HttpServletRequest" %>
+<%@ page import="jakarta.servlet.http.HttpServletResponse" %>
 
 <%@ include file="Header_Footer/Nav.jsp" %>
 <!DOCTYPE html>
@@ -25,14 +29,38 @@
                         <div class="profile-image">
                             <img src="./Images/Person.png" alt="Profile icon">
                         </div>
-                        <form action="/update-profile" method="POST">
-                            <div class="mb-3">
+                        <form action="../UpdateProfile" method="post">
+                            
+    <%   
+                      String url ="jdbc:sqlserver://192.168.121.250\\DATABASESERVER:1433;databaseName=Silent;encrypt=true;trustServerCertificate=true";
+                      String username = "Supun";
+                      String password = "Rulz@2002";
+                      
+                      String id = request.getParameter("custid");
+                       try {
+                             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                             Connection conn = DriverManager.getConnection(url, username, password);
+                             PreparedStatement sql = conn.prepareStatement("SELECT * FROM customer WHERE id = ?");
+                             
+                             sql.setString(1, id);
+                             
+                             ResultSet result = sql.executeQuery();
+            
+                             if(result.next()){ %>
+                                    <input 
+                                    type="text" 
+                                    id="custid" 
+                                    name="custid" 
+                                    value="<%= result.getString("id")%>" 
+                                    hidden 
+                                    required>
+                                 <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
                                 <input 
                                     type="email" 
                                     id="email" 
                                     name="email" 
-                                    value="<%= request.getAttribute("email") != null ? request.getAttribute("email") : "" %>" 
+                                    value="<%= result.getString("email")%>" 
                                     class="form-control" 
                                     required>
                             </div>
@@ -42,7 +70,7 @@
                                     type="text" 
                                     id="contactNumber" 
                                     name="contactNumber" 
-                                    value="<%= request.getAttribute("contactNumber") != null ? request.getAttribute("contactNumber") : "" %>" 
+                                    value="<%= result.getString("tel")%>" 
                                     class="form-control" 
                                     required>
                             </div>
@@ -52,12 +80,17 @@
                                     type="password" 
                                     id="password" 
                                     name="password" 
-                                    value="<%= request.getAttribute("password") != null ? request.getAttribute("password") : "" %>" 
                                     class="form-control" 
                                     required>
                             </div>
+                            <% }
+   
+                             conn.close();
+                       } catch (Exception ex) {
+                
+                       } %>
+                                      
                             <div class="d-flex justify-content-between">
-                                <button type="button" class="btn btn-danger">Cancel</button>
                                 <button type="submit" class="btn btn-success">Save</button>
                             </div>
                         </form>

@@ -14,7 +14,7 @@
 <section id="about-us" class="container my-5">
   <div class="text-dark p-3">
     <h3 class="text-left mb-3 fw-bold">ABOUT US</h3>
-    <h2 class="text-center text-dark mb-4 fw-bold">About Silent Cinemas</h2>
+    <h2 class="text-center text-dark mb-5 fw-bold">About Silent Cinemas</h2>
     <p class="text-start">
       Dedicated toward raising the bar in Sri Lanka's cinema experience, Silent aims to provide our patrons with all the flare of old-school movie theaters, coupled with state-of-the-art modernity and comfort, consistent with international standards.
     </p>

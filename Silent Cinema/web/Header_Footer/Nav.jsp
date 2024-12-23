@@ -21,9 +21,8 @@
             out.println("                <div class=\"collapse navbar-collapse\" id=\"navbarNav\">");
             out.println("                    <ul class=\"navbar-nav ms-auto\">");
             out.println("                        <li class=\"nav-item\"><a class=\"nav-link text-white\" href=\"" + request.getContextPath() + "/index.jsp\">HOME</a></li>");
-            out.println("                        <li class=\"nav-item\"><a class=\"nav-link text-white\" href=\"" + request.getContextPath() + "/Movies.jsp\">MOVIES</a></li>");
             out.println("                        <li class=\"nav-item\"><a class=\"nav-link text-white\" href=\"" + request.getContextPath() + "/Offers.jsp\">DEALS AND EXCLUSIVES</a></li>");
-            out.println("                        <li class=\"nav-item highlight\"><a class=\"nav-link text-white\" href=\"" + request.getContextPath() + "/Buytickets.jsp\">BUY TICKETS</a></li>");
+            out.println("                        <li class=\"nav-item highlight\"><a class=\"nav-link text-white\" href=\"" + request.getContextPath() + "/Movies.jsp\">BUY TICKETS</a></li>");
             //Checkin whether user is logged in
             HttpSession name = request.getSession(false);
             if (name != null && name.getAttribute("uname") != null){

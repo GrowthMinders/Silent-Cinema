@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+  
 html, body {
   margin: 0;
   padding: 0;
@@ -34,7 +34,7 @@ html, body {
   font-size: 22px;
   font-weight: bold;
 }
-
+  
 .seat-selection-movie-details {
   display: flex;
   justify-content: flex-start;
@@ -180,6 +180,7 @@ html, body {
 .seat-selection-color-box.light-blue {
   background-color: rgb(93, 193, 226);
 }
+
 .seat-selection-ticket-message {
   font-size: 16px;
   margin-bottom: 20px;
@@ -213,6 +214,7 @@ html, body {
   cursor: pointer;
   font-size: 14px;
 }
+
 
 .nav-button-back:hover, 
 .nav-button-continue:hover{

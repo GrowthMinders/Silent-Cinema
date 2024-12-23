@@ -5,6 +5,8 @@
 --%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.*" %>
 <%@ include file="Header_Footer/Nav.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +16,8 @@
     <title>Silent Cinemas</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     
     <link rel="stylesheet" href="./CSS/Home.css">
 </head>
@@ -30,33 +34,93 @@
     </section>
 
     
-    <section class="latest-movies py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Latest Movies</h2>
-            <div class="row g-4">
-               
-                <%
-                    String[][] movies = {
-                        {"Fighter", "10.30 AM | 1.30 PM | 4.30 PM", "1500 LKR onwards", "192.168.209./fighter.png"},
-                        {"Avatar The Last Airbender", "10.30 AM | 1.30 PM | 7.30 PM", "1450 LKR onwards", "images/avatar.png"},
-                        {"Kill", "1.30 PM | 8.00 PM", "1600 LKR onwards", "file:///D:/Web%20Content/kill.webp"}
-                    };
-                    for (String[] movie : movies) {
-                %>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="<%= movie[3] %>" class="card-img-top" alt="<%= movie[0] %>">
-                        <div class="card-body" onclick="window.location.href='./Film Details.jsp'">
-                            <h5 class="card-title"><%= movie[0] %></h5>
-                            <p class="card-text"><%= movie[1] %><br>Silent Cinemas<br><br><%= movie[2] %></p>
-                            <a href="./Buytickets.jsp" class="btn btn-primary">BUY TICKETS</a>
+   <section class="latest-movies py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Latest Movies</h2>
+        <div class="row g-4">
+            <%
+                String url = "jdbc:sqlserver://192.168.121.250\\DATABASESERVER:1433;databaseName=Silent;encrypt=true;trustServerCertificate=true";
+                String username = "Supun";
+                String password = "Rulz@2002";
+
+                String moviename = "";
+                String movielocation = "";
+                String movieposter = "";
+                String movieprice = "";
+                String movieid = "";
+                String time[] = new String[5];
+
+                try {
+                    Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                    Connection conn = DriverManager.getConnection(url, username, password);
+                    PreparedStatement sql = conn.prepareStatement("SELECT TOP 3 * FROM movie");
+                    PreparedStatement sql1 = conn.prepareStatement("SELECT * FROM timming");
+
+                    ResultSet result = sql.executeQuery();
+
+                    while (result.next()) {
+                        moviename = result.getString("mname");
+                        movielocation = result.getString("mtheater");
+                        movieposter = result.getString("mposter");
+                        movieprice = result.getString("mprice");
+                        movieid = result.getString("mid");
+
+                        boolean timing = false;
+
+                        // Re-execute the timing query for each movie
+                        ResultSet result1 = sql1.executeQuery();
+                        int i = 0;
+                        while (result1.next()) {
+                            if (moviename.equals(result1.getString("movie")) && movielocation.equals(result1.getString("theater"))) {
+                                time[i] = result1.getString("stime");
+                                i++;
+                                timing = true;
+                            }
+                        }
+            %>
+                        <div class="col-md-4">
+                            <div class="card shadow-sm border-0" style="width: 100%; border-radius: 10px; overflow: hidden; max-width: 350px;">
+                                <img src="./Backend_Images/Movies/<%= movieposter %>" class="card-img-top" alt="<%= movieposter %>" style="height: 250px; object-fit: cover;">
+                                <div class="card-body" style="background: #f8f9fa; padding: 15px;">
+                                    <h5 class="card-title text-center" style="font-weight: bold; color: #343a40; margin-bottom: 10px;">
+                                        <%= moviename %>
+                                    </h5>
+                                    <% if (timing) { %>
+                                        <div class="time-container d-flex justify-content-center flex-wrap" style="gap: 8px; margin-bottom: 10px;">
+                                            <% for (i = 0; i < 5; i++) {
+                                                if (time[i] != null && !time[i].isEmpty()) { %>
+                                                    <span class="badge bg-primary" style="font-size: 0.85rem; padding: 5px 10px;">
+                                                        <%= time[i] %>
+                                                    </span>
+                                            <% } 
+                                            } %>
+                                        </div>
+                                    <% } %>
+                                    <p class="card-text text-center" style="color: #6c757d; font-size: 0.9rem; margin-bottom: 10px;">
+                                        <i class="fas fa-map-marker-alt"></i> <%= movielocation %><br>
+                                        <strong style="color: #212529;"><%= movieprice %> LKR</strong>
+                                    </p>
+                                    <form action="./Film_Details.jsp" method="post" class="d-grid gap-2">
+                                        <input type="hidden" name="movieId" id="movieId" value="<%= movieid %>">
+                                        <button type="submit" class="btn btn-outline-primary" style="font-weight: bold;">Film Details</button>
+                                    </form>
+                                </div>
                             </div>
-                    </div>
-                </div>
-                <% } %>
-            </div>
+                        </div>
+            <%
+                        result1.close();
+                    }
+
+                    conn.close();
+                } catch (Exception ex) {
+                    out.println("<p style='color: red;'>Error: " + ex.getMessage() + "</p>");
+                }
+            %>
         </div>
-    </section>
+    </div>
+</section>
+
+
    <%@ include file="Header_Footer/Footer.jsp" %>           
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

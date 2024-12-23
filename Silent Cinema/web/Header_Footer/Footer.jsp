@@ -28,7 +28,6 @@ public class Footer {
         out.println("                    <a href=\"./index.jsp\">HOME</a>");
         out.println("                    <a href=\"./Movies.jsp\">MOVIES</a>");
         out.println("                    <a href=\"./Offers.jsp\">DEALS AND EXCLUSIVES</a>");
-        out.println("                    <a href=\"./Buytickets.jsp\">BUY TICKETS</a>");
         out.println("                    <a href=\"./AboutUs.jsp\">ABOUT US</a>");
         out.println("                    <p class=\"footer-email mt-3\">");
         out.println("                        <a href=\"mailto:silentcinemas2024@gmail.com\" class=\"footer-email-link\">silentcinemas2024@gmail.com</a>");
@@ -50,9 +49,9 @@ public class Footer {
         out.println("        </div>");
         out.println("        <div class=\"col-md-4 text-center find-us-section mt-3\">");
         out.println("            <p>Find us on app store and google play</p>");
-        out.println("            <div class=\"app-buttons d-flex flex-column align-items-center\">");
-        out.println("                <div class=\"app-button mb-2\"></div>");
-        out.println("                <div class=\"app-button\"></div>");
+        out.println("            <div class=\"app-buttons d-flex flex-row align-items-center\">");
+        out.println("                <div class=\"app-button\" style=\"margin-right: 20px\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg\" style=\"width: 130px; height: 40px;\" onclick=\"window.location.href = 'https://www.youtube.com/'\"></div>");
+        out.println("                <div class=\"app-button\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg\" style=\"width: 110px; height: 40px;\" onclick=\"window.location.href = 'https://www.google.com/'\"></div>");
         out.println("            </div>");
         out.println("        </div>");
         out.println("    </div>");

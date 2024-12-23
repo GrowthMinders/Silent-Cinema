@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.*" %>
 <%@ include file="Header_Footer/Nav.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,22 +18,56 @@
     <div class="profile-image">
       <img src="./Images/Person.png" alt="Profile Image" />
     </div>
-    <div class="profile-details">
-      <p><strong>First Name:</strong> Mehrab</p><br>
-      <p><strong>Last Name:</strong> Bozorgi</p><br>
-      <p><strong>Email:</strong> Mehrabbozorgi.business@gmail.com</p><br>
-      <p><strong>Address:</strong> 33062 Zboncak Isle</p><br>
-      <p><strong>Contact Number:</strong> 58077.79</p><br>
-      <p><strong>NIC Number:</strong> 123456789765</p><br>
-      <p><strong>Password:</strong> *********</p><br>
-      <button class="edit-btn" onclick="window.location.href='./Edit Profile.jsp'">Edit Profile</button>
-    </div>
+    <% HttpSession name = request.getSession(false);
+        String uname ="";
+        if (name != null && name.getAttribute("uname") != null){
+            uname = (String) name.getAttribute("uname");%>
+
+           <%   
+                      String url ="jdbc:sqlserver://192.168.121.250\\DATABASESERVER:1433;databaseName=Silent;encrypt=true;trustServerCertificate=true";
+                      String username = "Supun";
+                      String password = "Rulz@2002"; 
+                      
+                      String theater [] = new String[100];
+                       try {
+                             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                             Connection conn = DriverManager.getConnection(url, username, password);
+                             PreparedStatement sql = conn.prepareStatement("SELECT * FROM customer WHERE fname = ?");
+                             
+                             sql.setString(1, uname);
+                             
+                             ResultSet result = sql.executeQuery();
+            
+                             if(result.next()){ %>
+                                 <div class="profile-details">
+                                    <p><strong>First Name:</strong><%= result.getString("fname")%></p><br>
+                                    <p><strong>Last Name:</strong><%= result.getString("lname")%></p><br>
+                                    <p><strong>Email:</strong><%= result.getString("email")%></p><br>
+                                    <p><strong>Gender:</strong><%= result.getString("gen")%></p><br>
+                                    <p><strong>Contact Number:</strong><%= result.getString("tel")%></p><br>
+                                    <p><strong>NIC Number:</strong><%= result.getString("nic")%></p><br>
+                                    <p><strong>Password:</strong> *********</p><br>
+                                    <form action="./Edit_Profile.jsp" method="post">
+                                       <input type="hidden" name="custid" id="custid" value="<%= result.getString("id")%>">
+                                           <button type="submit" class="edit-btn">Edit Profile</button>
+                                    </form>
+                                    <button class="logout-btn" onclick="window.location.href='LogoutServletCust'">Log Out</button>
+                                 </div>
+                            <% }
+   
+                             conn.close();
+                       } catch (Exception ex) {
+                
+                       } %>
+                      
+   <% } %>
+    
     <div></center>
 
 
     
     <%@ include file="Header_Footer/Footer.jsp" %>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </div>
+  
 </body>
 </html>
